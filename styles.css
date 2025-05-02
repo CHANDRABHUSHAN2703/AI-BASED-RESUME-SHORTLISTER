@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #30473e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.upload-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload-section label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.upload-section input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.upload-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.upload-section button {
+    width: 100%;
+    padding: 12px;
+    background-color: #30473e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.upload-section button:hover {
+    background-color: #30473e;
+}
+
+.loading {
+    text-align: center;
+    color: #555;
+    font-size: 1rem;
+}
+
+.results-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.results-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.results-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.results-section th, .results-section td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.results-section th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.results-section tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results-section button {
+    padding: 8px 16px;
+    background-color: #30473e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.results-section button:hover {
+    background-color: #30473e;
+}
+
+.footer {
+    background-color: #30473e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}

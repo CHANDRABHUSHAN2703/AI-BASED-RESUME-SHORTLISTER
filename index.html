@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Shortlisting System</title>
+    <link rel="stylesheet" href="/static/CSS/styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>AI-Powered Resume Shortlisting System 🧑‍🔬</h1>
+    </div>
+
+    <div class="upload-section">
+        <form id="resumeForm" enctype="multipart/form-data">
+            <label for="resume-upload">Upload Resumes (PDF):</label>
+            <input type="file" id="resume-upload" name="resumes" multiple accept=".pdf">
+            
+            <label for="job-description">Enter Job Description:</label>
+            <textarea id="job-description" name="jobDescription" rows="5" placeholder="Paste job description here...">We are looking for a Software Engineer with experience in Python, Java, and machine learning. The candidate should have strong skills in data structures, algorithms, and web development. Knowledge of Django, Flask, and cloud platforms like AWS is a plus.</textarea>
+            
+            <button type="submit">Shortlist Resumes</button>
+        </form>
+        <div id="loading" class="loading hidden">Processing...</div>
+    </div>
+
+    <div class="results-section">
+        <h2>Shortlisted Resumes</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Resume Name</th>
+                    <th>Relevance Score</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="resultsTable"></tbody>
+        </table>
+        <button onclick="downloadResumes()">Download Shortlisted Resumes</button>
+    </div>
+
+    <div class="footer">
+        <p>Developer CHANDRA BHUSHAN PATHAK 🤖 | <a href="#" style="color: white;">GitHub</a> | <a href="https://www.linkedin.com/in/chandrabhushan-pathak-250067237" style="color: white;">LinkedIn</a></p>
+    </div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
